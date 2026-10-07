@@ -1,0 +1,11 @@
+{
+  "name": "node-ci-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js application for CI/CD practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js"
+  }
+}

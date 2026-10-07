@@ -1,0 +1,26 @@
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func helloHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Hello from CI/CD!")
+}
+
+func healthHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "OK")
+}
+
+func main() {
+	http.HandleFunc("/", helloHandler)
+	http.HandleFunc("/health", healthHandler)
+
+	fmt.Println("Server running on port 8080")
+
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err)
+	}
+}
