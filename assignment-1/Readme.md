@@ -53,3 +53,15 @@ Setup Go
 Test
   ↓
 Build
+
+### Definition of Done
+
+You have completed this assignment when:
+
+- the application runs, tests, and builds successfully locally
+- a push automatically triggers the workflow
+- the workflow checks out the repository and sets up Go
+- tests run before build
+- failed tests prevent build
+- you have caused and debugged a failure
+- you can explain workflow, job, runner, step, `run`, and `uses`
