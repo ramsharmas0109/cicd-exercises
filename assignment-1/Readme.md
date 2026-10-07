@@ -53,6 +53,7 @@ Setup Go
 Test
   ↓
 Build
+```
 
 ### Definition of Done
 
