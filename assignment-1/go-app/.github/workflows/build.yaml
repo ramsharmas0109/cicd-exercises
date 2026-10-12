@@ -1,0 +1,13 @@
+name: Build and Test Go
+
+on:
+  push:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Go
+        run: go mod tidy
+      - name: Build Go
+        run: go run main.go
