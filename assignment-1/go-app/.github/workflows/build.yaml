@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Go
-        run: go mod tidy
-      - name: Build Go
-        run: go run main.go
+        run: go build -o bin/app .
+      - name: Test Go
+        run: ./bin/app
